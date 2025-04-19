@@ -4,11 +4,6 @@ import { useState } from "react";
 export default function Landing() {
   const user = useUser();
   const [copied, setCopied] = useState(false);
-  const copyUserId = () => {
-    if (user?.id) {
-      navigator.clipboard.writeText(user.id);
-    }
-  };
 
   return (
     <div>
